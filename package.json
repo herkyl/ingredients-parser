@@ -2,7 +2,7 @@
   "name": "ingredients-parser",
   "version": "1.0.1",
   "description": "JavaScript ingredients parser",
-  "main": "pugjs-generated.js",
+  "main": "pegjs-generated.js",
   "scripts": {
     "test": "make test"
   },

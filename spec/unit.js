@@ -1,5 +1,5 @@
 const test = require('tape');
-const parser = require('../pugjs-generated.js');
+const parser = require('../pegjs-generated.js');
 const parse = parser.parse;
 
 test("doesn't parse a unit when there is none", function(t) {

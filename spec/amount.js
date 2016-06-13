@@ -1,5 +1,5 @@
 const test = require('tape');
-const parser = require('../pugjs-generated.js');
+const parser = require('../pegjs-generated.js');
 
 test('parses integers', function(t) {
   let result = parser.parse('2 potatoes');
