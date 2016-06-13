@@ -23,3 +23,13 @@ test('parses ingredient additions with a container', function(t) {
   });
   t.end();
 });
+
+test('omits \'of\' before an ingredient', function(t) {
+  let result = parser.parse('2 kg of potatoes');
+  t.deepEqual(result, {
+    amount: '2',
+    ingredient: 'potatoes',
+    unit: 'kg'
+  });
+  t.end();
+});
