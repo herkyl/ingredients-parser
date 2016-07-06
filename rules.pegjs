@@ -72,6 +72,7 @@ word_number
   / 'four'i
   / 'five'i
   / 'six'i
+  / 'seven'i
   / 'eight'i
   / 'nine'i
   / 'ten'i

@@ -1,5 +1,6 @@
 const test = require('tape');
 const parser = require('../pegjs-generated.js');
+const parse = parser.parse;
 
 test('parses integers', function(t) {
   let result = parser.parse('2 potatoes');
@@ -34,5 +35,21 @@ test('parses decimals', function(t) {
 test('parses decimals without leading digits', function(t) {
   let result = parser.parse('.5 potatoes');
   t.equal(result.amount, '.5');
+  t.end();
+});
+
+test('parses words as numbers', function (t) {
+  t.equal(parse('one potato').amount, 'one');
+  t.equal(parse('Two potato').amount, 'Two');
+  t.equal(parse('THREE potato').amount, 'THREE');
+  t.equal(parse('four potato').amount, 'four');
+  t.equal(parse('five potato').amount, 'five');
+  t.equal(parse('six potato').amount, 'six');
+  t.equal(parse('seven potato').amount, 'seven');
+  t.equal(parse('eight potato').amount, 'eight');
+  t.equal(parse('nine potato').amount, 'nine');
+  t.equal(parse('ten potato').amount, 'ten');
+  t.equal(parse('eleven potato').amount, 'eleven');
+  t.equal(parse('twelve potato').amount, 'twelve');
   t.end();
 });
