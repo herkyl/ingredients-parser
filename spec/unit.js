@@ -204,3 +204,9 @@ test('parses splashes', function(t) {
   t.equal(parse('1 splash yeast').unit, 'splash');
   t.end();
 });
+
+test('parses sprigs', function(t) {
+  t.equal(parse('2 Sprigs of fresh mint').unit, 'Sprigs');
+  t.equal(parse('sprig of fresh mint').unit, 'sprig');
+  t.end();
+});

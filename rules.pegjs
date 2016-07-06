@@ -224,6 +224,7 @@ imprecise_unit
   / packet
   / envelope
   / splash
+  / sprig
 
 dash
   = 'dashes'i
@@ -256,3 +257,7 @@ envelope
 splash
   = 'splashes'i
   / 'splash'i
+
+sprig
+  = 'sprigs'i
+  / 'sprig'i
