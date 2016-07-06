@@ -53,3 +53,11 @@ test('parses words as numbers', function (t) {
   t.equal(parse('twelve potato').amount, 'twelve');
   t.end();
 });
+
+test('parses few', function (t) {
+  t.equal(parse('a few cherries').amount, 'a few');
+  t.equal(parse('a Few cherries').amount, 'a Few');
+  t.equal(parse('an few cherries').amount, 'an few');
+  t.equal(parse('few cherries').amount, 'few');
+  t.end();
+});

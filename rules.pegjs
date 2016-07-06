@@ -25,6 +25,7 @@ amount
   / word_number
   / float
   / integer
+  / few
 
 container
   = container_wrapper_start? (ws+)? amount:amount (ws+)? unit:unit (ws+)? container_wrapper_end? {
@@ -43,6 +44,9 @@ ws
 
 preposition
   = 'of'i
+
+article
+  = 'an'i / 'a'i
 
 space
   = " "
@@ -78,6 +82,9 @@ word_number
   / 'ten'i
   / 'eleven'i
   / 'twelve'i
+
+few
+  = $(article? ' '? 'few'i)
 
 fraction
   = $(integer [/] integer)
