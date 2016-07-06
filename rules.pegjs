@@ -223,6 +223,7 @@ imprecise_unit
   / slice
   / packet
   / envelope
+  / splash
 
 dash
   = 'dashes'i
@@ -251,3 +252,7 @@ packet
 envelope
   = 'envelopes'i
   / 'envelope'i
+
+splash
+  = 'splashes'i
+  / 'splash'i

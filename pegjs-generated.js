@@ -284,6 +284,10 @@ module.exports = (function() {
         peg$c228 = { type: "literal", value: "envelopes", description: "\"envelopes\"" },
         peg$c229 = "envelope",
         peg$c230 = { type: "literal", value: "envelope", description: "\"envelope\"" },
+        peg$c231 = "splashes",
+        peg$c232 = { type: "literal", value: "splashes", description: "\"splashes\"" },
+        peg$c233 = "splash",
+        peg$c234 = { type: "literal", value: "splash", description: "\"splash\"" },
 
         peg$currPos          = 0,
         peg$savedPos         = 0,
@@ -2164,6 +2168,9 @@ module.exports = (function() {
                 s0 = peg$parsepacket();
                 if (s0 === peg$FAILED) {
                   s0 = peg$parseenvelope();
+                  if (s0 === peg$FAILED) {
+                    s0 = peg$parsesplash();
+                  }
                 }
               }
             }
@@ -2329,6 +2336,29 @@ module.exports = (function() {
         } else {
           s0 = peg$FAILED;
           if (peg$silentFails === 0) { peg$fail(peg$c230); }
+        }
+      }
+
+      return s0;
+    }
+
+    function peg$parsesplash() {
+      var s0;
+
+      if (input.substr(peg$currPos, 8).toLowerCase() === peg$c231) {
+        s0 = input.substr(peg$currPos, 8);
+        peg$currPos += 8;
+      } else {
+        s0 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c232); }
+      }
+      if (s0 === peg$FAILED) {
+        if (input.substr(peg$currPos, 6).toLowerCase() === peg$c233) {
+          s0 = input.substr(peg$currPos, 6);
+          peg$currPos += 6;
+        } else {
+          s0 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c234); }
         }
       }
 

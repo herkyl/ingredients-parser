@@ -198,3 +198,9 @@ test('parses envelopes', function(t) {
   t.equal(parse('1 envelope yeast').unit, 'envelope');
   t.end();
 });
+
+test('parses splashes', function(t) {
+  t.equal(parse('a few splashes of maple cyrup').unit, 'splashes');
+  t.equal(parse('1 splash yeast').unit, 'splash');
+  t.end();
+});
