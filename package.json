@@ -1,6 +1,6 @@
 {
   "name": "ingredients-parser",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "JavaScript ingredients parser",
   "main": "pegjs-generated.js",
   "scripts": {
