@@ -61,3 +61,10 @@ test('parses few', function (t) {
   t.equal(parse('few cherries').amount, 'few');
   t.end();
 });
+
+test('parses couple', function (t) {
+  t.equal(parse('couple cherries').amount, 'couple');
+  t.equal(parse('a Couple cherries').amount, 'a Couple');
+  t.equal(parse('a couple of cherries').amount, 'a couple');
+  t.end();
+});

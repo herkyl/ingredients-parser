@@ -26,6 +26,7 @@ amount
   / float
   / integer
   / few
+  / couple
 
 container
   = container_wrapper_start? (ws+)? amount:amount (ws+)? unit:unit (ws+)? container_wrapper_end? {
@@ -82,6 +83,9 @@ word_number
   / 'ten'i
   / 'eleven'i
   / 'twelve'i
+
+couple
+  = $(article? ' '? 'couple'i)
 
 few
   = $(article? ' '? 'few'i)
