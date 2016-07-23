@@ -210,3 +210,9 @@ test('parses sprigs', function(t) {
   t.equal(parse('sprig of fresh mint').unit, 'sprig');
   t.end();
 });
+
+test('parses sheet', function(t) {
+  t.equal(parse('2 sheets of nori').unit, 'sheets');
+  t.equal(parse('sheet of nori').unit, 'sheet');
+  t.end();
+});

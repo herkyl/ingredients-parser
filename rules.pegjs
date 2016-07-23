@@ -229,6 +229,7 @@ imprecise_unit
   / envelope
   / splash
   / sprig
+  / sheet
 
 dash
   = 'dashes'i
@@ -265,3 +266,7 @@ splash
 sprig
   = 'sprigs'i
   / 'sprig'i
+
+sheet
+  = 'sheets'i
+  / 'sheet'i
