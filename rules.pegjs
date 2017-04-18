@@ -230,6 +230,8 @@ imprecise_unit
   / splash
   / sprig
   / sheet
+  / can
+  / bag
 
 dash
   = 'dashes'i
@@ -270,3 +272,11 @@ sprig
 sheet
   = 'sheets'i
   / 'sheet'i
+
+can
+  = 'cans'i
+  / 'can'i
+  
+ bag
+  = 'bag'i
+  / 'bags'i
