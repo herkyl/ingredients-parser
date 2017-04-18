@@ -226,6 +226,7 @@ imprecise_unit
   / touch
   / slice
   / packet
+  / package
   / envelope
   / splash
   / sprig
@@ -257,6 +258,10 @@ packet
   = 'packets'i
   / 'packet'i
 
+package
+  = 'package'i
+  / 'packages'i
+  
 envelope
   = 'envelopes'i
   / 'envelope'i
