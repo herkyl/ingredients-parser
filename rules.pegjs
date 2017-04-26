@@ -226,10 +226,13 @@ imprecise_unit
   / touch
   / slice
   / packet
+  / package
   / envelope
   / splash
   / sprig
   / sheet
+  / can
+  / bag
 
 dash
   = 'dashes'i
@@ -255,6 +258,10 @@ packet
   = 'packets'i
   / 'packet'i
 
+package
+  = 'package'i
+  / 'packages'i
+  
 envelope
   = 'envelopes'i
   / 'envelope'i
@@ -270,3 +277,11 @@ sprig
 sheet
   = 'sheets'i
   / 'sheet'i
+
+can
+  = 'cans'i
+  / 'can'i
+  
+ bag
+  = 'bag'i
+  / 'bags'i
