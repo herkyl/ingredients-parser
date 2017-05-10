@@ -219,3 +219,44 @@ milliliter
   / 'ml.'i
   / 'ml'i
 
+imprecise_unit = bag bar bottle bowl breast bulb bun bunch can carton cone clove container large medium mini small cube fillet head unit jar pack package packet patty piece portion servings roll slice dash handful pinch touch slice envelope splash spring sheet
+bag = 'bags'i 'bag'i
+bar = 'bars'i 'bar'i
+bottle = 'bottles'i 'bottle'i
+bowl = 'bowls'i 'bowl'i
+breast = 'breasts'i 'breast'i
+bulb = 'bulbs'i 'bulb'i
+bun = 'buns'i 'bun'i
+bunch = 'bunches'i 'bunch'i
+can = 'cans'i 'can'i
+carton = 'cartons'i 'carton'i
+cone = 'cones'i 'cone'i
+clove = 'cloves'i 'clove'i
+container = 'containers'i 'container'i
+large = 'larges'i 'large'i
+medium = 'mediums'i 'medium'i
+mini = 'minis'i 'mini'i
+small = 'smalls'i 'small'i
+cube = 'cubes'i 'cube'i
+fillet = 'fillets'i 'fillet'i
+head = 'heads'i 'head'i
+unit = 'units'i 'unit'i
+jar = 'jars'i 'jar'i
+pack = 'packs'i 'pack'i
+package = 'packages'i 'package'i
+packet = 'packets'i 'packet'i
+patty = 'patties'i 'patty'i
+piece = 'pieces'i 'piece'i
+portion = 'portions'i 'portion'i
+servings = 'servingses'i 'servings'i
+roll = 'rolls'i 'roll'i
+slice = 'slices'i 'slice'i
+dash = 'dashs'i 'dash'i
+handful = 'handfuls'i 'handful'i
+pinch = 'pinches'i 'pinch'i
+touch = 'touches'i 'touch'i
+slice = 'slices'i 'slice'i
+envelope = 'envelopes'i 'envelope'i
+splash = 'splashs'i 'splash'i
+spring = 'springs'i 'spring'i
+sheet = 'sheets'i 'sheet'i
