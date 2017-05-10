@@ -16,7 +16,8 @@ test('parses ingredient additions with a container', function(t) {
   let result = parser.parse('2 28 oz can tomatoes');
   t.deepEqual(result, {
     amount: '2',
-    ingredient: 'can tomatoes',
+    ingredient: 'tomatoes',
+    unit: 'can',
     container: {
       amount: '28',
       unit: 'oz'
