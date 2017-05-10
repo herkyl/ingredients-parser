@@ -181,10 +181,12 @@ teaspoon
   / 't'
 
 metric_unit
-  = gram
-  / kilogram
-  / liter
+  = kilogram
+  / gram
   / milligram
+  / liter
+  / deciliter
+  / centiliter
   / milliliter
 
 gram
@@ -218,4 +220,16 @@ milliliter
   / 'milliliter'i
   / 'ml.'i
   / 'ml'i
+
+centiliter
+  = 'centiliters'i
+  / 'centiliter'i
+  / 'cl.'i
+  / 'cl'i
+
+deciliter
+  = 'deciliters'i
+  / 'deciliter'i
+  / 'dl.'i
+  / 'dl'i
 

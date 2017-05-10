@@ -181,10 +181,12 @@ teaspoon
   / 't'
 
 metric_unit
-  = gram
-  / kilogram
-  / liter
+  = kilogram
+  / gram
   / milligram
+  / liter
+  / deciliter
+  / centiliter
   / milliliter
 
 gram
@@ -218,6 +220,18 @@ milliliter
   / 'milliliter'i
   / 'ml.'i
   / 'ml'i
+
+centiliter
+  = 'centiliters'i
+  / 'centiliter'i
+  / 'cl.'i
+  / 'cl'i
+
+deciliter
+  = 'deciliters'i
+  / 'deciliter'i
+  / 'dl.'i
+  / 'dl'i
 
 imprecise_unit = bag bar bottle bowl breast bulb bun bunch can carton cone clove container large medium mini small cube fillet head unit jar pack package packet patty piece portion servings roll slice dash handful pinch touch slice envelope splash spring sheet
 bag = 'bags'i 'bag'i
