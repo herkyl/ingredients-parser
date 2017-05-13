@@ -1,5 +1,5 @@
-build: rules-gen.pegjs
-	./node_modules/pegjs/bin/pegjs rules-gen.pegjs pegjs-generated.js
+build: clean rules-gen.pegjs
+	./node_modules/pegjs/bin/pegjs -o pegjs-generated.js rules-gen.pegjs
 
 rules-gen.pegjs: rules.pegjs unprecise.pegjs
 	cat rules.pegjs unprecise.pegjs > rules-gen.pegjs
