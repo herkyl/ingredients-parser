@@ -2,10 +2,10 @@ start
   = ingredient_full
 
 ingredient_full
-  = amount:amount? (ws+)? container:container? unit:unit? (ws+)? preposition:preposition? (ws+)? ingredient:ingredient? [\n]?  {
+  = amount:amount? (ws+)? container_rule:container_rule? unit:unit? (ws+)? preposition:preposition? (ws+)? ingredient:ingredient? [\n]?  {
     var result = {
       amount: amount,
-      container: container,
+      container: container_rule,
       ingredient: ingredient,
       unit: unit,
     };
@@ -28,7 +28,7 @@ amount
   / few
   / couple
 
-container
+container_rule
   = container_wrapper_start? (ws+)? amount:amount (ws+)? unit:unit (ws+)? container_wrapper_end? {
     return { amount: amount, unit: unit };
   }
@@ -232,4 +232,3 @@ deciliter
   / 'deciliter'i
   / 'dl.'i
   / 'dl'i
-

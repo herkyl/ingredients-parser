@@ -5,7 +5,7 @@ const unprecise_units = [
   "carton", "cone", "clove", "container", "large", "medium", "mini", "small",
   "cube", "fillet", "head", "jar", "package", "packet", "pack", "patty",
   "piece", "portion", "servings", "roll", "slice", "handful", "pinch",
-  "touch","slice", "envelope", "sprig", "sheet"
+  "touch", "envelope", "sprig", "sheet"
 ];
 
 const l = unprecise_units.concat(['dash','splash','unit_']).join(' / ');
