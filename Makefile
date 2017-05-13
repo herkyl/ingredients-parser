@@ -14,4 +14,4 @@ publish: build
 	npm publish
 
 clean:
-	rm unprecise.pegjs rules-gen.pegjs pegjs-generated.js
+	rm -f unprecise.pegjs rules-gen.pegjs pegjs-generated.js
