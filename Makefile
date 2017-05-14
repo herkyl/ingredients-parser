@@ -1,5 +1,5 @@
 build: rules-gen.pegjs
-	./node_modules/pegjs/bin/pegjs -o pegjs-generated.js rules-gen.pegjs
+	./node_modules/pegjs/bin/pegjs -o pegjs-gen.js rules-gen.pegjs
 
 rules-gen.pegjs: rules.pegjs unprecise.pegjs
 	cat rules.pegjs unprecise.pegjs > rules-gen.pegjs
@@ -14,4 +14,4 @@ publish: build
 	npm publish
 
 clean:
-	rm -f unprecise.pegjs rules-gen.pegjs pegjs-generated.js
+	rm -f unprecise.pegjs rules-gen.pegjs pegjs-gen.js
