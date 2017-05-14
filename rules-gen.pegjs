@@ -232,7 +232,7 @@ deciliter
   / 'deciliter'i
   / 'dl.'i
   / 'dl'i
-imprecise_unit = bag / bar / bottle / bowl / breast / bulb / bun / bunch / can / carton / cone / clove / container / large / medium / mini / small / cube / fillet / head / jar / package / packet / pack / patty / piece / portion / servings / roll / slice / handful / pinch / touch / envelope / sprig / sheet / dash / splash / unit_
+imprecise_unit = bag / bar / bottle / bowl / breast / bulb / bun / bunch / can / carton / cone / clove / large / medium / mini / small / cube / fillet / head / jar / package / packet / pack / patty / piece / portion / servings / roll / slice / handful / pinch / touch / envelope / sprig / sheet / dash / splash / unit_ / container_
 bag = 'bags'i / 'bag'i
 bar = 'bars'i / 'bar'i
 bottle = 'bottles'i / 'bottle'i
@@ -245,7 +245,6 @@ can = 'cans'i / 'can'i
 carton = 'cartons'i / 'carton'i
 cone = 'cones'i / 'cone'i
 clove = 'cloves'i / 'clove'i
-container = 'containers'i / 'container'i
 large = 'larges'i / 'large'i
 medium = 'mediums'i / 'medium'i
 mini = 'minis'i / 'mini'i
@@ -272,3 +271,4 @@ sheet = 'sheets'i / 'sheet'i
 splash = 'splashes'i / 'splash'i
 dash = 'dashes'i / 'dash'i
 unit_ = 'units'i / 'unit'i
+container_ = 'containers'i / 'container'i
