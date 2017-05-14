@@ -1,4 +1,4 @@
-build: clean rules-gen.pegjs
+build: rules-gen.pegjs
 	./node_modules/pegjs/bin/pegjs -o pegjs-generated.js rules-gen.pegjs
 
 rules-gen.pegjs: rules.pegjs unprecise.pegjs

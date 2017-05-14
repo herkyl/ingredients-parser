@@ -1,6 +1,6 @@
 const plural = require('plural');
 
-const unprecise_units = [
+const imprecise_units = [
   "bag", "bar", "bottle", "bowl", "breast", "bulb", "bun", "bunch", "can",
   "carton", "cone", "clove", "container", "large", "medium", "mini", "small",
   "cube", "fillet", "head", "jar", "package", "packet", "pack", "patty",
@@ -8,10 +8,10 @@ const unprecise_units = [
   "touch", "envelope", "sprig", "sheet"
 ];
 
-const l = unprecise_units.concat(['dash','splash','unit_']).join(' / ');
+const l = imprecise_units.concat(['dash','splash','unit_']).join(' / ');
 console.log("imprecise_unit = %s",l);
 
-unprecise_units.forEach(w =>
+imprecise_units.forEach(w =>
   console.log("%s = '%s'i / '%s'i", w, plural(w), w)
 );
 

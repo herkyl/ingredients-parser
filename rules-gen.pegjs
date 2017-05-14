@@ -2,10 +2,10 @@ start
   = ingredient_full
 
 ingredient_full
-  = amount:amount? (ws+)? container:container? unit:unit? (ws+)? preposition:preposition? (ws+)? ingredient:ingredient? [\n]?  {
+  = amount:amount? (ws+)? container_rule:container_rule? unit:unit? (ws+)? preposition:preposition? (ws+)? ingredient:ingredient? [\n]?  {
     var result = {
       amount: amount,
-      container: container,
+      container: container_rule,
       ingredient: ingredient,
       unit: unit,
     };
@@ -28,7 +28,7 @@ amount
   / few
   / couple
 
-container
+container_rule
   = container_wrapper_start? (ws+)? amount:amount (ws+)? unit:unit (ws+)? container_wrapper_end? {
     return { amount: amount, unit: unit };
   }
@@ -232,8 +232,7 @@ deciliter
   / 'deciliter'i
   / 'dl.'i
   / 'dl'i
-
-imprecise_unit = bag / bar / bottle / bowl / breast / bulb / bun / bunch / can / carton / cone / clove / container / large / medium / mini / small / cube / fillet / head / jar / package / packet / pack / patty / piece / portion / servings / roll / slice / handful / pinch / touch / slice / envelope / sprig / sheet / dash / splash / unit_
+imprecise_unit = bag / bar / bottle / bowl / breast / bulb / bun / bunch / can / carton / cone / clove / container / large / medium / mini / small / cube / fillet / head / jar / package / packet / pack / patty / piece / portion / servings / roll / slice / handful / pinch / touch / envelope / sprig / sheet / dash / splash / unit_
 bag = 'bags'i / 'bag'i
 bar = 'bars'i / 'bar'i
 bottle = 'bottles'i / 'bottle'i
@@ -267,7 +266,6 @@ slice = 'slices'i / 'slice'i
 handful = 'handfuls'i / 'handful'i
 pinch = 'pinches'i / 'pinch'i
 touch = 'touches'i / 'touch'i
-slice = 'slices'i / 'slice'i
 envelope = 'envelopes'i / 'envelope'i
 sprig = 'sprigs'i / 'sprig'i
 sheet = 'sheets'i / 'sheet'i
