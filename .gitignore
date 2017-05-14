@@ -1,4 +1,5 @@
 rules-gen.js
+rules-gen.pegjs
 pegjs-generated.js
 unprecise.pegjs
 
