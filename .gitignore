@@ -1,3 +1,7 @@
+rules-gen.js
+rules-gen.pegjs
+pegjs-gen.js
+unprecise.pegjs
 
 # Created by https://www.gitignore.io/api/osx,node
 
